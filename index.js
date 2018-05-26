@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
-    'standard',
     'plugin:react/recommended',
   ],
   parser: 'babel-eslint',
@@ -18,7 +17,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  plugins: ['standard', 'promise', 'react'],
+  plugins: ['promise', 'react'],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     'comma-style': 'error',

@@ -1,6 +1,6 @@
 {
   "name": "@usirin/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Umut Sirin's eslint config",
   "main": "index.js",
   "scripts": {
@@ -9,19 +9,15 @@
   "author": "Umut Sirin <umutsirin1@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 3",
+    "eslint": ">= 4",
     "prettier": ">= 0.11.0"
   },
   "dependencies": {
     "babel-eslint": "^8.2.3",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.8.2",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-react": "^7.8.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
