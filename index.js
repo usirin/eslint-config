@@ -1,77 +1,30 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    'plugin:react/recommended',
-  ],
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 8,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+  parser: "babel-eslint",
   env: {
     browser: true,
     es6: true,
     node: true,
+    jest: true
   },
-  plugins: ['promise', 'react'],
+  extends: [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2018,
+    sourceType: "module"
+  },
+  plugins: ["import"],
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
-    'comma-style': 'error',
-    eqeqeq: 'warn',
-    'guard-for-in': 'error',
-    'keyword-spacing': 'error',
-    'lines-between-class-members': ['error', 'always'],
-    'max-nested-callbacks': ['error', 3],
-    'newline-per-chained-call': 'error',
-    'no-else-return': 'error',
-    'no-eval': 'error',
-    'no-implied-eval': 'error',
-    'no-lonely-if': 'error',
-    'no-new-func': 'error',
-    'no-shadow-restricted-names': 'error',
-    'no-trailing-spaces': 'error',
-    'no-undef-init': 'error',
-    'no-useless-concat': 'error',
-    'no-var': 'error',
-    'object-shorthand': 'error',
-    'prefer-arrow-callback': 'error',
-    'prefer-spread': 'error',
-    'prettier/prettier': [
-      'error',
-      {
-        semi: false,
-        singleQuote: true,
-        trailingComma: 'es5',
-      },
-    ],
-    radix: 'error',
-    semi: ['error', 'never'],
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'never',
-        asyncArrow: 'always',
-        named: 'never',
-      },
-    ],
-    strict: ['error', 'never'],
-    'react/jsx-no-bind': ['error', { ignoreRefs: true }],
-    'react/jsx-no-duplicate-props': 'error',
-    'react/no-find-dom-node': 'error',
-    'react/no-is-mounted': 'error',
-    'react/no-string-refs': 'error',
-    'react/no-unknown-property': ['error', { ignore: ['class', 'for'] }],
-    'react/prefer-es6-class': 'error',
-    'react/require-render-return': 'error',
-    'react/self-closing-comp': 'error',
-    'react/jsx-curly-spacing': 'error',
-    'react/jsx-no-comment-textnodes': 'error',
-    'react/jsx-no-undef': 'error',
-    'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
-  },
-}
+    "prettier/prettier": "error"
+  }
+};
