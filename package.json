@@ -9,14 +9,14 @@
   "author": "Umut Sirin <umutsirin1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.17.3",
+    "babel-eslint": "^10.0.3",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.13.0",
-    "prettier": "^1.17.1"
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^6.3.0"
   }
 }
